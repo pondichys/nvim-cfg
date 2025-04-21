@@ -47,6 +47,12 @@ return {
   -- Add comment in code
   {
     "echasnovski/mini.comment",
+    dependencies = {
+      {
+        "JoosepAlviste/nvim-ts-context-commentstring",
+        opts = { enable_automcmd = false, },
+      },
+    },
     event = "VeryLazy",
     opts = {
       options = {
