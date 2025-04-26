@@ -31,3 +31,8 @@ map("n", "<leader>bo", function()
   Snacks.bufdelete.other()
 end, { desc = "Delete Other Buffers" })
 map("n", "<leader>bD", "<cmd>:bd<cr>", { desc = "Delete Buffer and Window" })
+
+-- Toggles
+Snacks.toggle.option("relativenumber", { name = "Relative Number" }):map("<leader>uL")
+Snacks.toggle.diagnostics():map("<leader>ud")
+Snacks.toggle.line_number():map("<leader>ul")
