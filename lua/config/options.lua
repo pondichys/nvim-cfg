@@ -1,10 +1,10 @@
 local opt = vim.opt
 
 -- Tabs
-vim.opt.expandtab = true -- Convert tabs to spaces
-vim.opt.shiftwidth = 4   -- Amount to indent with << and >>
-vim.opt.tabstop = 4      -- How many spaces are shown per Tab
-vim.opt.softtabstop = 4  -- How many spaces are applied when pressing Tab
+opt.expandtab = true -- Convert tabs to spaces
+opt.shiftwidth = 4   -- Amount to indent with << and >>
+opt.tabstop = 4      -- How many spaces are shown per Tab
+opt.softtabstop = 4  -- How many spaces are applied when pressing Tab
 
 -- Display relative line numbers
 opt.number = true
