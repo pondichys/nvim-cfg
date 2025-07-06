@@ -9,7 +9,7 @@ return {
     -- refer to the configuration section below
     bigfile = { enabled = true },
     dashboard = { enabled = false },
-    explorer = { enabled = true },
+    explorer = { enabled = false },
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
@@ -23,7 +23,6 @@ return {
   },
   keys = {
     -- find
-    { "<leader>e",  function() Snacks.explorer.open() end,                                  desc = "Open classic file tree explorer" },
     { "<leader>fb", function() Snacks.picker.buffers() end,                                 desc = "Find Buffers" },
     { "<leader>fc", function() Snacks.picker.files({ cwd = vim.fn.stdpath("config") }) end, desc = "Find Config File" },
     { "<leader>ff", function() Snacks.picker.files() end,                                   desc = "Find Files" },
