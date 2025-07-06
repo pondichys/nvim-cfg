@@ -29,6 +29,7 @@ return {
     { "<leader>fg", function() Snacks.picker.git_files() end,                               desc = "Find Git Files" },
     -- { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
     -- { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent" },
+    -- search
     { "<leader>gg", function() Snacks.lazygit() end,                                        desc = "Lazygit" },
     { "<leader>sk", function() Snacks.picker.keymaps() end,                                 desc = "Keymaps" },
     { "<leader>sd", function() Snacks.picker.diagnostics() end,                             desc = "Diagnostics" },
@@ -37,5 +38,7 @@ return {
     { "<leader>sH", function() Snacks.picker.highlights() end,                              desc = "Highlights" },
     { "<leader>si", function() Snacks.picker.icons() end,                                   desc = "Icons" },
     { "<leader>bd", function() Snacks.bufdelete() end,                                      desc = "Delete Buffer" },
+    --
+    { "<leader>z",  function() Snacks.zen() end,                                            desc = "Toggle Zen Mode" },
   },
 }
