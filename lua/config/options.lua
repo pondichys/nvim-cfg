@@ -29,6 +29,9 @@ opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 opt.splitright = true
 opt.splitbelow = true
 
+-- Use rounded window borders
+opt.winborder = "rounded"
+
 --
 -- Diagnostic options
 --
