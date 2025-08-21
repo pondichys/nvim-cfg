@@ -70,6 +70,12 @@ return {
       diagnostics = {
         disable = { "missing-fields" },
         globals = { 'vim', 'Snacks' },
+        workspace = {
+          library = {
+            vim.fn.expand("$VIMRUNTIME/lua"),
+            vim.fn.expand("$XDG_CONFIG_HOME") .. "/nvim/lua",
+          },
+        },
       }
     }
   },
